@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/ecommerce-pharmacy4/static/css/main.3e48375a.css",
+    "main.js": "/ecommerce-pharmacy4/static/js/main.a202af4d.js",
+    "static/media/input.png": "/ecommerce-pharmacy4/static/media/input.f257bc3c2ce5ae3a57db.png",
+    "static/media/my-account.jpg": "/ecommerce-pharmacy4/static/media/my-account.b60f4f583f3603323573.jpg",
+    "static/media/slide3.png": "/ecommerce-pharmacy4/static/media/slide3.bcefd5b7afe9caddd749.png",
+    "static/media/slide2.png": "/ecommerce-pharmacy4/static/media/slide2.4723e64c35aadda11e61.png",
+    "static/media/admin.png": "/ecommerce-pharmacy4/static/media/admin.ab45eb1d42b1faaf3d12.png",
+    "static/media/slide4.png": "/ecommerce-pharmacy4/static/media/slide4.f794b90df180b5e12880.png",
+    "static/media/slide1.png": "/ecommerce-pharmacy4/static/media/slide1.8085df3cf49342b14389.png",
+    "static/media/product9.png": "/ecommerce-pharmacy4/static/media/product9.71a7f22e8db3289bb684.png",
+    "static/media/product16.png": "/ecommerce-pharmacy4/static/media/product16.bb06bd3ac8faae9c3a21.png",
+    "static/media/product15.png": "/ecommerce-pharmacy4/static/media/product15.257486132147ffb8c745.png",
+    "static/media/product11.png": "/ecommerce-pharmacy4/static/media/product11.4b2ac1c06408e1f104ba.png",
+    "static/media/product18.png": "/ecommerce-pharmacy4/static/media/product18.a204b178977796154eac.png",
+    "static/media/product19.png": "/ecommerce-pharmacy4/static/media/product19.c229c9e9014797e150ab.png",
+    "static/media/product10.png": "/ecommerce-pharmacy4/static/media/product10.3a80e80379e37098331e.png",
+    "static/media/product22.png": "/ecommerce-pharmacy4/static/media/product22.e7a551e3eff1a0fcaa1f.png",
+    "static/media/product5.png": "/ecommerce-pharmacy4/static/media/product5.683b0eea489bf5472016.png",
+    "static/media/product14.png": "/ecommerce-pharmacy4/static/media/product14.f66c35df9a8119c82b7a.png",
+    "static/media/product17.png": "/ecommerce-pharmacy4/static/media/product17.aaca4178e252e44b5fbc.png",
+    "static/media/product20.png": "/ecommerce-pharmacy4/static/media/product20.6be2ff4f1adf89c88de5.png",
+    "static/media/product8.png": "/ecommerce-pharmacy4/static/media/product8.943172870fc334f86e2d.png",
+    "static/media/cat11.png": "/ecommerce-pharmacy4/static/media/cat11.e8f3a69f164587a7ff6e.png",
+    "static/media/product24.png": "/ecommerce-pharmacy4/static/media/product24.a931d3d24fff3732e759.png",
+    "static/media/Medicine.svg": "/ecommerce-pharmacy4/static/media/Medicine.1aedb0410436a16572b1e6f1676f5a95.svg",
+    "static/media/slick.svg": "/ecommerce-pharmacy4/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/ecommerce-pharmacy4/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/ecommerce-pharmacy4/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/ecommerce-pharmacy4/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/ecommerce-pharmacy4/index.html",
+    "main.3e48375a.css.map": "/ecommerce-pharmacy4/static/css/main.3e48375a.css.map",
+    "main.a202af4d.js.map": "/ecommerce-pharmacy4/static/js/main.a202af4d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e48375a.css",
+    "static/js/main.a202af4d.js"
+  ]
+}
