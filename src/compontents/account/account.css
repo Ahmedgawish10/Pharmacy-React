@@ -1,0 +1,86 @@
+.section__account {
+    margin-top: 50px;
+  }
+  .section__account .container {
+
+    max-width: 60%;
+    margin: auto;
+  }
+  .section__account .content {
+    margin-top: 60px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e6e6e6;
+  }
+  @media (max-width:560px) {
+    .section__account .content {
+flex-wrap: wrap;
+    }
+    .section__account .content .right {
+width: 100%;
+margin-left: initial ;
+margin-top: 20px;
+    }
+  }
+  .section__account .left {
+    width: 150px;
+    position: relative;
+  }
+  .section__account .right {
+    width: calc(100% - 180px);
+    margin-left: 50px;
+  }
+  .section__account .right input{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #212121;
+    outline: none;
+    border-radius: 5px;
+  }
+  .section__account .left .img input {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+
+  }
+  .section__account .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+    border-radius: 50%;
+  }
+  
+  .section__account .right label {
+    font-size: 17px;
+    color: #000;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    display: block;
+  }
+  .content .button__update{
+    background: #212121;
+    border: 1px solid #212121;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    height: 48px;
+    line-height: 1;
+    padding: 15px 28px;
+    margin-top: 15px;
+  }
+  @media  screen and (max-width:768px) {
+    .section__account .container {
+
+      max-width: initial;
+      margin: auto;
+    }
+ }

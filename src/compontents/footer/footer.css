@@ -1,0 +1,15 @@
+.footer__container{
+    width: 90%;
+    margin: auto;
+    
+    }
+    
+    .social__container{
+    padding: 10px 0px;
+    
+    margin: auto;
+    }
+    .social .social__container a .icon {
+     font-size: 24px;
+    }
+    

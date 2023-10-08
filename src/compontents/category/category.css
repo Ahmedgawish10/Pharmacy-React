@@ -1,0 +1,98 @@
+
+
+.category__boxs{
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+
+    border-radius: 5px;
+}
+.box__product {
+    transition: .4s;
+    cursor: pointer;
+}
+.box__product:hover {
+transform:translatey(-8px);
+transition: .4s;
+}
+.btn-control-next button,
+.btn-control-prev button
+ {
+    background: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    padding: 2px;
+    outline: none;
+    border: none;
+  }
+  .btn-control-next {
+position: absolute;
+top: 40%;
+background-color: red;
+
+
+  }
+.btn-next{
+    position: absolute;
+    left: -4%;
+    background: red;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    top: 40%;
+    transform: translate(-50%,-50%);
+}
+.btn-control-prev {
+    position: absolute;
+    top: 40%;
+    right: -3%;
+    background-color: red;
+    width: 10px;
+    z-index: 100;
+      }
+    .btn-prev{
+        position: absolute;
+        right: 0%;
+        background: red;
+        height: 10px;
+        position: absolute;
+        width: 10px;
+        top: 40%;
+        transform: translate(-50%,-50%);
+    }
+      /* ----------------------section media----------------------------------- */
+/* media large */
+@media  screen and (max-width:992px) {
+ 
+}
+/* media tablet */
+@media  screen and (max-width:768px) {
+    .btn-control-prev,.btn-control-next {
+        top: 45%;
+       
+          }
+}
+/* media medium */
+@media  screen and (max-width:560px) {
+    .category__container{
+        cursor: pointer;
+    }
+.btn-next{
+    display: none !important;
+}
+.btn-prev{
+    display: none !important;
+}
+}
+/* media small */
+@media  screen and (max-width:350px) {
+
+  
+}
