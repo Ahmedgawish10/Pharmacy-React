@@ -20,7 +20,7 @@ function Header() {
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
   return (
     <>
-      {isLoggedIn && (
+     
         <div className="header">
           <div className="containerr ">
             <div className="header__content">
@@ -36,13 +36,18 @@ function Header() {
                 <input type="text" id="focus" placeholder="Search..." />
               </div>
               <div className="account d-flex align-items-center">
-                <Card />
-                <User />
+                {isLoggedIn ?<div className="d-flex gap-2" ><Card /><User /></div>: 
+                <div>
+                  <a href="/ecommerce-pharmacy4/#/login" type="button" className="btn btn-dark me-3 text-white head-login">Login</a>
+                  <a href="/ecommerce-pharmacy4/#/register" type="button" className="btn btn-dark me-3 text-white">Register</a>
+                  </div> 
+}
+             
               </div>
             </div>
           </div>
         </div>
-      )}
+
     </>
   );
 }
