@@ -29,12 +29,17 @@ function Header() {
                   <img src={Medicine} alt={Medicine} />
                 </Link>
               </div>
+              {isLoggedIn ?
               <div className="search  d-flex align-items-center">
-                <label htmlFor="focus" className="searchIcon">
-                  <AiOutlineSearch />
-                </label>
-                <input type="text" id="focus" placeholder="Search..." />
-              </div>
+              <label htmlFor="focus" className="searchIcon">
+                <AiOutlineSearch />
+              </label>
+              
+              <input type="text" id="focus" placeholder="Search..." />
+            </div>:""
+            
+            }
+              
               <div className="account d-flex align-items-center">
                 {isLoggedIn ?<div className="d-flex gap-2" ><Card /><User /></div>: 
                 <div>
