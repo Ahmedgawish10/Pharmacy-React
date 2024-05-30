@@ -1,13 +1,21 @@
 import React, { useState } from 'react'
+import "./header.css"
+
 import ImgUser from "../../assets/images/admin.png"
 import {AiOutlineUser,AiOutlineHeart,AiOutlineUnlock,AiOutlineQuestion,AiOutlineLogin} from "react-icons/ai"
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import { logout } from '../../redux-store/AuthSlice';
+import { useDispatch } from 'react-redux';
 function User() {
     
     const [openprofile,setopenprofile]=useState(false)
+    const dispatch=useDispatch()
     const [user,setuser]=useState(true)
     const closeprofile=()=>{
         setopenprofile(false)
+    }
+    const Logout=()=>{
+        dispatch(logout())
     }
   return (
     
@@ -55,13 +63,11 @@ function User() {
                                        <span className='myaccount__title ps-4'>Help</span>
                                     </a>
                                 </div>
-                                <div className='mylogout ' onClick={()=>{
-                                    setuser(false)
-                                }}>
-                                    <Link to="/login">
+                                <div className='mylogout '>
+                                    {/* <Link to="/login"> */}
                                     <AiOutlineLogin className='myaccount__icon'/>
-                                       <span className='myaccount__title ps-4'>Log Out</span>
-                                    </Link>
+                                       <span className='myaccount__title ps-4' onClick={Logout}>Log Out</span>
+                                    {/* </Link> */}
                                 </div>
                             </div>
 

@@ -1,4 +1,19 @@
-/* style of section register */
+/* loader auth */
+.loader {
+  width: 32px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: 
+  radial-gradient(farthest-side, #ffa516 94%, #0000) top/8px 8px no-repeat,
+  conic-gradient(#0000 30%, #ffa516);
+-webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0); /* Define the standard property */
+animation: l13 1s infinite linear;
+}
+@keyframes l13{ 
+  100%{transform: rotate(1turn)}
+}
+/* style section register */
 .section__register,
 .section__login
  {
@@ -45,14 +60,15 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-    margin: 60px auto;
+    margin: 50px auto;
+    margin-top: 23px;
     padding:20px ;
     border: 1px solid #e6e6e6;
     border-radius: 5px;
     background-color: white;
   }
-  form span{
-    padding-bottom: 15px;
+  form .title-input{
+    padding-bottom: 5px;
   }
   form input{
     outline: none;
@@ -90,4 +106,27 @@
     height: 48px;
     line-height: 1;
     padding: 15px 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section__login input{
+    margin-bottom: 0 !important;
+  }
+  .login {
+    height: 74vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .login .form {
+    width: 100%;
+
+  }
+  /* media */
+  @media screen and (max-width:600px) {
+     form{
+      width: 90%;
+     }
   }

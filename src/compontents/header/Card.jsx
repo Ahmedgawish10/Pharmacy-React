@@ -35,7 +35,7 @@ function Card() {
                 </button>
         </div>
         <div className='allproducts'>
-        <CartItems />
+        <CartItems CloseCard={closeCard} />
        </div>
         <div className="checkout">
             <button>

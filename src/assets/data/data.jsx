@@ -1,4 +1,3 @@
-import React from "react";
 import slide1 from "../images/slide1.png";
 import slide2 from "../images/slide2.png";
 import slide3 from "../images/slide3.png";
@@ -41,6 +40,7 @@ import product21 from "../images/product21.jpg";
 import product22 from "../images/product22.png";
 import product23 from "../images/product23.jpg";
 import product24 from "../images/product24.png";
+// -------------------------------slide---------------------------
 export const slide = [
   { image: slide1 },
   { image: slide2 },
@@ -52,22 +52,22 @@ export const order = [
   {
     id: 1,
     title: "Your Order",
-    desc: "There are many variations of passages of Lorem Ipsum available",
+    desc: "We offer a wide range of medical products to meet your needs.",
   },
   {
     id: 2,
     title: "Ready Your Order",
-    desc: "There are many variations of passages of Lorem Ipsum available",
+    desc: "Our team is carefully selecting and preparing your medical products.",
   },
   {
     id: 3,
     title: "Packing Your Order",
-    desc: "There are many variations of passages of Lorem Ipsum available",
+    desc: "We ensure that your medical products are packed securely and safely.",
   },
   {
     id: 4,
-    title: "And Deliver",
-    desc: "There are many variations of passages of Lorem Ipsum available",
+    title: "Delivering Your Order",
+    desc: "Your medical products are on their way to you with prompt and reliable delivery.",
   },
 ];
 // -------------------------------category---------------------------
@@ -93,11 +93,6 @@ export const category = [
     img: cat4,
   },
   {
-    id: 5,
-    title: "feminine hygiene",
-    img: cat8,
-  },
-  {
     id: 6,
     title: "health&protein",
     img: cat6,
@@ -109,7 +104,7 @@ export const category = [
   },
   {
     id: 8,
-    title: "medicine&first aid",
+    title: "medicine&aid",
     img: cat8,
   },
   {

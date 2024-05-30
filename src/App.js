@@ -6,6 +6,7 @@ import Register from "./compontents/login/Register"
 import Login from "./compontents/login/Login"
 import Account from "./compontents/account/Account"
 import {Footer} from "./compontents/footer/Footer"
+import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
   return (

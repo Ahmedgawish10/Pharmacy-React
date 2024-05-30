@@ -1,7 +1,7 @@
-import React from 'react'
+import {React,useState} from 'react'
 import { addToCart,decreasefromcart,removeFromCart } from '../../redux-store/CartSlice';
 import { useDispatch,useSelector } from 'react-redux';
-function CartItems() {
+function CartItems({CloseCard}) {
 
   const dispatch=useDispatch();
     const cart= useSelector((state)=>{return state.cart})
@@ -10,17 +10,27 @@ function CartItems() {
 const data=localStorage.getItem("product")
 const parsedata=JSON.parse(data)
 return parsedata
-console.log(parsedata);
-// 
+//console.log(parsedata);
+ 
 
  }
+ const [CardOpen,setCardOpen]=useState(false);
 
+  const closeCard=()=>{
+    CloseCard()
+  }
   return (
+
+    
     <>
-     <div className="cartlist  " onClick={getlocalstorage}>
-{cart.length==0?"shoping cart is empty !":
+     <div className="cartlist  " >
+{cart.length==0?<div className="text-danger text-center mt-5" >
+<h2>  cart is empty 😊!</h2>
+<div><a ><button type="button" className="btn btn-dark mt-4" onClick={closeCard}>🚀 Back to home</button></a></div>
+</div>:
 
 cart.map((product)=>{
+ 
   return(
     
     <div className='cartlist__item d-flex align-items-center gap-3 mb-3' key={product.id}> 
