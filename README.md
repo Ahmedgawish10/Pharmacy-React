@@ -1,7 +1,6 @@
 <h1> Cartsy Pharmacy </h1>
-This React e-commerce webstie is designed to provide a seamless shopping experience with efficient product management and user authentication.
-It fetches product data from an API, stores it in local storage, and supports user registration and login. 
-and implements lazy loading for optimized performance.<br>
+e-commerce website for the medical industry, facilitating the sale of a variety of medical healthy products. The application ensures a smooth shopping experience for customerswith efficient product management and user authentication.
+It fetches product data from an API, stores it in local storage, and supports user registration and login.and implements lazy loading for optimized performance.<br>
 
 🚀 Features
 ---
@@ -12,7 +11,7 @@ and implements lazy loading for optimized performance.<br>
 
 🚀 Technologies Used
 ---
-Frontend: HTML, CSS, JavaScript,React<br>
+Frontend: HTML, CSS, JavaScript, React, ReduxToolkit <br>
 Data Handling: Local Storage, REST API<br>
 
 🚀 Installation
