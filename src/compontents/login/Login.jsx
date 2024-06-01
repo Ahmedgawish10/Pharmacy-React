@@ -52,9 +52,8 @@ const Login = () => {
             duration: 4000,
           });
         } else {
-          console.log(0);
-          setLoading(false);
-console.log(loading);
+          setLoading(true);
+           console.log(loading);
           setTimeout(() => {
             setLoading(false);
              Credintails = toast.error("Invalid Credintails", {

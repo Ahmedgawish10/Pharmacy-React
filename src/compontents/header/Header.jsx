@@ -41,7 +41,7 @@ function Header() {
             }
               
               <div className="account d-flex align-items-center">
-                {isLoggedIn ?<div className="d-flex gap-2" ><Card /><User /></div>: 
+                {isLoggedIn ?<div className="d-flex gap-2  align-items-center" ><Card /><User /></div>: 
                 <div>
                   <a href="/ecommerce-pharmacy4/#/login" type="button" className="btn btn-dark me-3 text-white head-login">Login</a>
                   <a href="/ecommerce-pharmacy4/#/register" type="button" className="btn btn-dark me-3 text-white">Register</a>

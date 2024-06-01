@@ -28,12 +28,11 @@ const onSubmit =  (values) => {
   try {
      console.log(values);
      localStorage.setItem("userRegister", JSON.stringify(values));
-    
     setTimeout(() => {
       toast.success("Registered successfully ",{
         className:"custom-class-toast",
       })
-     window.location.href = "/ecommerce-pharmacy4/#/login";
+    window.location.href = "/ecommerce-pharmacy4/#/login";
      }, 3000);
   } catch (error) {
     console.error("Login failed:", error);

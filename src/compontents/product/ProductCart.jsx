@@ -23,7 +23,7 @@ function ProductCart() {
             <img src={item.img} alt="" style={{width:"90px",marginRight:"10px"}}/>
         </div>
         <div className="details w-100">
-        <h3 className='fs-5 text-black'> ${item.price} {isLoggedIn ? "Yes" : "No"}</h3>
+        <h3 className='fs-5 text-black'> ${item.price}</h3>
         <p className='text-black-50'>{item.name}</p>
         <button className='float-end border-0 bg-white fs-4'onClick={()=>{
           dispatch(addToCart(item))

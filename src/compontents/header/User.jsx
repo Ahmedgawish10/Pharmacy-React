@@ -17,6 +17,11 @@ function User() {
     const Logout=()=>{
         dispatch(logout())
     }
+    let nameOfUser=JSON.parse(localStorage.getItem("userRegister"))
+  console.log(nameOfUser.name);
+
+
+
   return (
     
     <div className='user'>
@@ -33,7 +38,7 @@ function User() {
                             <div className='box-1 d-flex column-gap-3 mb-4'>
                             <img src={ImgUser} alt=""  style={{width:"40px", cursor: "pointer"}}/> 
                             <div className='who__user d-flex  flex-column'>
-                            <div>ahmed</div>
+                            <div>{nameOfUser.name}</div>
                             <div>egypt</div>
                             </div>
                             </div>
@@ -64,10 +69,11 @@ function User() {
                                     </a>
                                 </div>
                                 <div className='mylogout '>
-                                    {/* <Link to="/login"> */}
-                                    <AiOutlineLogin className='myaccount__icon'/>
+                                  <span>
+                                     <AiOutlineLogin className='myaccount__icon' onClick={Logout}/>
                                        <span className='myaccount__title ps-4' onClick={Logout}>Log Out</span>
-                                    {/* </Link> */}
+                                  </span>
+                                
                                 </div>
                             </div>
 

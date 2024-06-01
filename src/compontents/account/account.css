@@ -40,12 +40,16 @@ margin-top: 20px;
     outline: none;
     border-radius: 5px;
   }
+  .section__account .left .img {
+    cursor: pointer;
+  }
   .section__account .left .img input {
     width: 150px;
     height: 150px;
     position: relative;
     z-index: 2;
     opacity: 0;
+    cursor: pointer;
 
   }
   .section__account .img img {

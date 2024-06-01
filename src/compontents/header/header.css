@@ -1,6 +1,5 @@
-.mylogout{
+.mylogout > span{
     cursor: pointer;
-    background-color: red;
 }
 
 

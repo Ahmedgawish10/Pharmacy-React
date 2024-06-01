@@ -1,5 +1,7 @@
 import React from "react"
 import image from "../../assets/images/input.png"
+import imagev from "../../assets/images/admin.png"
+
 import "./account.css"
 
 const Account = () => {
@@ -12,15 +14,15 @@ const Account = () => {
             <div className='left'>
               <div className='img flexCenter'>
                 <input type='file' accept='image/*' src={image} alt='imgs' />
-                <img src={image} alt='' className='image-preview' />
+                <img src={imagev} alt='' className='image-preview' />
               </div>
             </div>
             <div className='right'>
-              <label for="name">Username</label>
+              <label htmlFor="name">Username</label>
               <input type='text' id="name" required />
-              <label for="email">Email</label>
+              <label htmlFor="email">Email</label>
               <input type='text' id="email" required />
-              <label for="password">Password * </label>
+              <label htmlFor="password">Password * </label>
               <input type='text' id="password" required /><br/>
               <button className='button__update'>Update</button>
             </div>

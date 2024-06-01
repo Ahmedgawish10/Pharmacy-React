@@ -9,28 +9,40 @@ const cartSlice = createSlice({
   initialState: arraycart?arraycart:[],
   reducers: {
     addToCart(state, action) {
-      const findProduct=state.find((product)=>{return product.id=== action.payload.id})
-      if(findProduct){
-        findProduct.quantity++
-        const cartElement = document.querySelector('.showcarditem');
-                if (!cartElement) {
-          const toastId=toast.loading('Product already in cart!',{
+        let  isAuthenticated=localStorage.getItem("isAuthenticated")
+         const findProduct=state.find((product)=>{return product.id=== action.payload.id})
+      if (isAuthenticated=="true" && findProduct) {
+          console.log(isAuthenticated);
+          if(findProduct){
+            findProduct.quantity++
+            const cartElement = document.querySelector('.showcarditem');
+                    if (!cartElement) {
+              const toastId=toast.loading('Product already in cart!',{
+                className:"custom-class-toast",
+                duration: 2000, 
+              });
+              setTimeout(() => {
+                toast.dismiss(toastId);
+              }, 2000);
+            }
+         }
+  
+      }else{
+        if (isAuthenticated=="true") {
+          toast.success('Product added in cart!',{
             className:"custom-class-toast",
             duration: 2000, 
           });
-          setTimeout(() => {
-            toast.dismiss(toastId);
-          }, 2000);
-        }
-      }else{
-        toast.success('Product added in cart!',{
-          className:"custom-class-toast",
-          duration: 2000, 
-        });
-        const cloneproduct= {...action.payload,quantity:1}
-        state.push(cloneproduct);
+          const cloneproduct= {...action.payload,quantity:1}
+          state.push(cloneproduct);
+          localStorage.setItem("cartitems",JSON.stringify(state))
+        }else{
+          toast.error('You must register first !',{
+            className:"custom-class-toast",
+            duration: 2000, 
+          });
+        }  
       }
-      localStorage.setItem("cartitems",JSON.stringify(state))
       // console.log(state.indexOf(action.payload))
     },
     removeFromCart(state, action) {
@@ -38,7 +50,7 @@ const cartSlice = createSlice({
        state.splice(index,1)
       localStorage.setItem("cartitems",JSON.stringify(state))
       const myCart= localStorage.getItem("cartitems");
-             if (JSON.parse(myCart).length==0) {
+             if (JSON.parse(myCart).length===0) {
               toast.error('Your  cart is empty now !',{
                 className:"custom-class-toast",
                 duration: 1000, 
