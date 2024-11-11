@@ -3,18 +3,8 @@ import "./order.css";
 import {toast,Toaster} from "react-hot-toast";
 import { order } from "../../assets/data/data";
 
-
-
-
-
-
 function Order() {
-
-
-
-
- 
-  return (
+ return (
     <div className="section__order">
       <div className="box__items ">
         {order.map((item) => {
