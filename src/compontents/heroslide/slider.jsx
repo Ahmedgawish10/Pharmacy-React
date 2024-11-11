@@ -10,13 +10,10 @@ function slider() {
              <div className="slider__box" key={index+1}>
                 <div className="box__img">
                     <img src={item.image} alt="" />
-                </div>
-            
-                
-      </div>) 
+                </div>            
+             </div>) 
          })}
         </div>
-
     </div>
   )
 }
